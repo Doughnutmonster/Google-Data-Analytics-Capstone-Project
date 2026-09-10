@@ -93,61 +93,86 @@ Notably, Sunday emerges as the peak day for ride duration across both user group
 
 Total Number of rides per Day:
 
-The highest number of rides for annual members is on Tuesdays, with 372,026 total rides, and the highest number of rides for casual riders is on Saturdays, with 269,198 total rides.
+<img width="585" height="404" alt="No of Casual vs member rides per day" src="https://github.com/user-attachments/assets/ef555046-4f07-48d7-bc47-ba52bace29bc" />
+
+
+The highest number of rides for annual members is on Tuesdays, with **372,026** total rides, and the highest number of rides for casual riders is on Saturdays, with **269,198** total rides.
 
 Casual vs Member rider activity per Month:
 
-The highest rider activity for casual riders is in the month of August with a total of 216,515 rides, while the highest rider activity for annual members falls in the month of September with a total of 286,850 rides.
+<img width="582" height="675" alt="Casual vs Member riders per month" src="https://github.com/user-attachments/assets/468a1de6-7c0e-4613-83a0-d96b7a05c69e" />
 
-Key Takeaways
+
+The highest rider activity for casual riders is in the month of August with a total of **216,515 rides**, while the highest rider activity for annual members falls in the month of September with a total of **286,850** rides.
+
+**Key Takeaways**
+
 Annual members ride more frequently than casual riders.
+
 Casual riders ride for longer durations than annual members.
+
 Annual members ride more often on Weekdays, while casual riders ride more on the weekends.
+
 Riding activity for both annual members and casual riders peaks during the Summer Months.
+
 August had the highest average of riding activity for both groups.
 
-Analysis Summary
-The analysis explored key behavioral differences between annual members and casual riders using targeted SQL queries to examine ride frequency, average duration, and usage patterns by day and month. Findings revealed that annual members ride more often—2,296,802 rides compared to 1,294,446 for casual riders—while casual riders take longer trips on average (22.21 minutes vs. 12.18 minutes). Members are most active on weekdays, especially Tuesdays, whereas casual riders favor weekends, particularly Saturdays. Summer months drive increased ridership in both groups, with August as the overall peak, highlighting the seasonal influence on cycling behavior.
+**Analysis Summary**
 
-Share
+The analysis explored key behavioral differences between annual members and casual riders using targeted SQL queries to examine ride frequency, average duration, and usage patterns by day and month. Findings revealed that annual members ride more often (**2,296,802** rides compared to **1,294,446** for casual riders) while casual riders take longer trips on average (**22.21** minutes vs. **12.18** minutes). Members are most active on **weekdays**, especially Tuesdays, whereas casual riders favor **weekends**, particularly Saturdays. Summer months drive increased ridership in both groups, with August as the overall peak, highlighting the seasonal influence on cycling behavior.
+
+## Share
 Visualizations were created in Tableau to support key findings from the analysis stage.
 The visualizations are as follows;
 
 Total Number of rides in 2025 (Member vs Casual):
 
+<img width="578" height="714" alt="total rides dash" src="https://github.com/user-attachments/assets/c5834822-2f94-469a-b9dc-c5b4d8b32a0c" />
+
 
 
 Total Number of rides per Month (Member vs Casual):
 
+<img width="1614" height="613" alt="Total num of rides per month" src="https://github.com/user-attachments/assets/92f40211-40bc-48d8-8866-93881b6e7727" />
+
 
 Total Number of rides per Day (Member vs Casual):
 
+<img width="914" height="880" alt="total number of rides per day" src="https://github.com/user-attachments/assets/98dd457e-88b2-43a5-9636-bb432d0c6af8" />
 
 
 
 Average ride duration (Member vs Casual):
 
+<img width="2026" height="162" alt="Avg ride length" src="https://github.com/user-attachments/assets/daebd46e-8d8d-4ff6-8604-3293a0f4023e" />
+
 
 Average ride duration per Month (Member vs Casual):
+
+<img width="1857" height="883" alt="Avg ride length per month" src="https://github.com/user-attachments/assets/6106f5c2-256e-4323-bd47-73e3cd77cc2d" />
 
 
 Average ride duration per Day (Member vs Casual):
 
+<img width="1721" height="881" alt="Avg ride length per day" src="https://github.com/user-attachments/assets/b7d8aec4-7bf9-4707-b8a9-a3a216e78f84" />
 
 
 
 
 
 
-Act
+## Act
 
-Recommendations
-Launch weekend membership campaigns specifically designed to engage casual riders, leveraging their peak weekend activity to drive conversions. Casual riders are most active on Saturdays, while annual members ride more frequently on weekdays. Since casual riders also have longer average rides (22.21 minutes vs. 12.18 minutes), Cyclistic could promote the value of an annual membership specifically during weekend riding periods. For example, digital ads and in-app promotions could target casual riders on Saturdays with messaging emphasizing the benefits and potential value of switching to an annual membership.
+## Recommendations
+
+**Launch weekend membership campaigns specifically designed to engage casual riders, leveraging their peak weekend activity to drive conversions.** Casual riders are most active on Saturdays, while annual members ride more frequently on weekdays. Since casual riders also have longer average rides (22.21 minutes vs. 12.18 minutes), Cyclistic could promote the value of an annual membership specifically during weekend riding periods. For example, digital ads and in-app promotions could target casual riders on Saturdays with messaging emphasizing the benefits and potential value of switching to an annual membership.
+
  
-Increased digital marketing during the Summer months. Casual riders are most active in August, likely capitalizing on peak summer conditions, while annual members reach their highest engagement in September. This staggered seasonality suggests opportunities for targeted campaigns, such as summer promotions for casual riders and early autumn incentives for annual members, to maximize ridership and support conversion efforts.
-
-Promote the value and convenience of annual memberships to longer-duration riders. Casual riders consistently take longer trips, averaging 22.21 minutes compared to 12.18 minutes for annual members, indicating a preference for leisure or extended journeys. This behavior presents a clear opportunity: position annual membership as the ideal choice for those who seek flexibility and value on longer rides. Tailored campaigns can emphasize how “the more you ride, the more you save”, making membership a compelling upgrade for frequent, long-distance riders. 
+**Increased digital marketing during the Summer months.** Casual riders are most active in August, likely capitalizing on peak summer conditions, while annual members reach their highest engagement in September. This staggered seasonality suggests opportunities for targeted campaigns, such as summer promotions for casual riders and early autumn incentives for annual members, to maximize ridership and support conversion efforts.
 
 
-Conclusion
+**Promote the value and convenience of annual memberships to longer-duration riders.** Casual riders consistently take longer trips, averaging 22.21 minutes compared to 12.18 minutes for annual members, indicating a preference for leisure or extended journeys. This behavior presents a clear opportunity: position annual membership as the ideal choice for those who seek flexibility and value on longer rides. Tailored campaigns can emphasize how “the more you ride, the more you save”, making membership a compelling upgrade for frequent, long-distance riders. 
+
+
+## Conclusion
 This analysis demonstrates clear differences in how Cyclistic’s casual riders and annual members use the bike-share service. Annual members ride more frequently and primarily use the service on weekdays, while casual riders take longer trips and are more active on weekends. Both groups experience their highest levels of activity during the summer months, with August showing particularly high riding activity. These patterns present an opportunity for Cyclistic to target casual riders when they are most engaged with the service. By implementing weekend-focused promotions, increasing digital marketing during the summer, and highlighting the value of annual memberships for longer rides, Cyclistic can develop a more targeted strategy to encourage casual riders to become annual members and support the company’s long-term growth. 
