@@ -1,0 +1,69 @@
+
+---Mean, Max, Mode, frequency
+
+--calculate the mean value of ride length 
+SELECT AVG(ride_length_in_mins) AS mean_value
+FROM `steam-nuance-493517-n7.cyclistic_ride_share.cleaned_2025_data`;
+
+--calculate the max value of ride length 
+SELECT MAX(ride_length_in_mins) AS max_value
+FROM `steam-nuance-493517-n7.cyclistic_ride_share.cleaned_2025_data`;
+
+--calculate the mode of day_of_week
+WITH frequency_cte AS (
+  SELECT day_of_week, COUNT(*) AS frequency
+  FROM `steam-nuance-493517-n7.cyclistic_ride_share.cleaned_2025_data` 
+  GROUP BY day_of_week
+)
+SELECT day_of_week
+FROM frequency_cte
+WHERE frequency = (SELECT MAX(frequency) FROM frequency_cte);
+
+--Month that had the most frequent activity
+WITH frequency_cte AS (
+  SELECT month, COUNT(*) AS frequency
+  FROM `steam-nuance-493517-n7.cyclistic_ride_share.cleaned_2025_data` 
+  GROUP BY month
+)
+SELECT month
+FROM frequency_cte
+WHERE frequency = (SELECT MAX(frequency) FROM frequency_cte);
+
+---Average Ride Lengths
+
+--Calculate AVG ride length for Members and Casuals
+SELECT member_casual, AVG(ride_length_in_mins) AS mean_value
+FROM `steam-nuance-493517-n7.cyclistic_ride_share.cleaned_2025_data` 
+GROUP BY member_casual;
+
+--Calculate AVG ride length per day of the week (Members vs casuals)
+SELECT member_casual, day_of_week, AVG(ride_length_in_mins) AS avg_ride_lnth
+FROM `steam-nuance-493517-n7.cyclistic_ride_share.cleaned_2025_data` 
+GROUP BY member_casual, day_of_week
+ORDER BY avg_ride_lnth DESC;
+
+--Calculate AVG ride length per month (Members vs casuals)
+SELECT member_casual, month, AVG(ride_length_in_mins) AS avg_ride_lnth
+FROM `steam-nuance-493517-n7.cyclistic_ride_share.cleaned_2025_data` 
+GROUP BY member_casual, month
+ORDER BY avg_ride_lnth DESC;
+
+---Num of rides
+
+--Total num of casual/member rides for the year 
+SELECT member_casual,COUNT(*) AS total_rides_2025
+FROM `steam-nuance-493517-n7.cyclistic_ride_share.cleaned_2025_data`
+GROUP BY member_casual
+ORDER BY total_rides_2025 DESC;
+
+--Num of casual/member rides per day_of_wk
+SELECT member_casual, day_of_week,COUNT(*) AS total_rides_per_day
+FROM `steam-nuance-493517-n7.cyclistic_ride_share.cleaned_2025_data`
+GROUP BY member_casual,day_of_week
+ORDER BY total_rides_per_day DESC;
+
+--num of casual/member rides per month
+SELECT member_casual, month,COUNT(*) AS total_rides_per_mnth
+FROM `steam-nuance-493517-n7.cyclistic_ride_share.cleaned_2025_data`
+GROUP BY member_casual,month
+ORDER BY total_rides_per_mnth DESC, month DESC;
