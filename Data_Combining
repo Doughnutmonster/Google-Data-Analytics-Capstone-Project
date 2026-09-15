@@ -1,0 +1,29 @@
+Data_combining
+
+-- Combine all the data from Jan to Dec into a new table
+
+CREATE TABLE `cyclistic_ride_share.combined_2025_data` AS (
+  SELECT * FROM `steam-nuance-493517-n7.cyclistic_ride_share.2025_jan_data`
+  UNION ALL
+  SELECT * FROM `steam-nuance-493517-n7.cyclistic_ride_share.2025_feb_data`
+  UNION ALL
+  SELECT * FROM `steam-nuance-493517-n7.cyclistic_ride_share.2025_mar_data`
+  UNION ALL
+  SELECT * FROM `steam-nuance-493517-n7.cyclistic_ride_share.2025_apr_data`
+  UNION ALL
+  SELECT * FROM `steam-nuance-493517-n7.cyclistic_ride_share.2025_may_data`
+  UNION ALL
+  SELECT * FROM `steam-nuance-493517-n7.cyclistic_ride_share.2025_jun_data`
+  UNION ALL
+  SELECT * FROM `steam-nuance-493517-n7.cyclistic_ride_share.2025_jul_data`
+  UNION ALL
+  SELECT * FROM `steam-nuance-493517-n7.cyclistic_ride_share.2025_aug_data`
+  UNION ALL
+  SELECT * FROM `steam-nuance-493517-n7.cyclistic_ride_share.2025_sept_data`
+  UNION ALL
+  SELECT * FROM `steam-nuance-493517-n7.cyclistic_ride_share.2025_oct_data`
+  UNION ALL
+  SELECT * FROM `steam-nuance-493517-n7.cyclistic_ride_share.2025_nov_data`
+  UNION ALL
+  SELECT * FROM `steam-nuance-493517-n7.cyclistic_ride_share.2025_dec_data`
+);
