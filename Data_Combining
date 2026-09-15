@@ -1,5 +1,3 @@
-Data_combining
-
 -- Combine all the data from Jan to Dec into a new table
 
 CREATE TABLE `cyclistic_ride_share.combined_2025_data` AS (
