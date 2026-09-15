@@ -1,6 +1,4 @@
-
 --Create a new table with cleaned data
-
 WITH calculated_trips AS (
   SELECT 
     *,
